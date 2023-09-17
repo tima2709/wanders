@@ -1,0 +1,56 @@
+.searchAndDatePicker {
+    padding: 23px 16px;
+    border-radius: 50px;
+    border: 3px solid #0FA958;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 768px;
+}
+
+.search {
+    /*position: relative;*/
+    margin-right: 46px;
+    color: #6E6E6E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search::after{
+    content: '';
+    /*position: absolute;*/
+    top: 0;
+    right: 15px;
+    border: 1px solid black;
+    height: 15px;
+    width: 20px;
+    color: black;
+    background: #000;
+}
+
+
+
+.searchBtn {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 35px;
+    background: #0FA958;
+    padding: 14px 23px;
+    border: none;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
