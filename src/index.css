@@ -57,3 +57,8 @@ p {
   line-height: normal;
   color: #000;
 }
+
+a {
+  color: #000;
+  text-decoration: none;
+}

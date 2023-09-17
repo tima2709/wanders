@@ -8,7 +8,7 @@ const SearchAndDatePicker = () => {
     const [dateRange, setDateRange] = useState([null, null]);
     const [startDate, endDate] = dateRange;
     const [searchTour, setSearchTour] = useState('')
-    console.log(dateRange)
+
 
     return (
         <div className={classes.searchAndDatePicker}>

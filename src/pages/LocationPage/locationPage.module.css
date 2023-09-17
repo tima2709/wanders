@@ -142,3 +142,67 @@ img  {
 .whatIsThere h3 {
     padding-bottom: 20px;
 }
+
+.showMore_btn {
+    color: #0FA958;
+    font-family: Averta Demo PE;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.howToGetThere {
+    padding: 100px 0;
+}
+
+.howToGetThere h2 {
+    margin-bottom: 20px;
+}
+
+.howToGetThere p {
+    margin-bottom: 30px;
+}
+
+.road_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.road_btn button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #0FA958;
+    color: #0FA958;
+    font-family: Averta Demo PE;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #fff;
+    cursor: pointer;
+}
+
+.time_price p{
+    color: #000;
+    font-family: Gilroy;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.time_price span {
+    color: #000;
+    font-family: Averta Demo PE;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

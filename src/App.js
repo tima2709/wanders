@@ -1,12 +1,16 @@
-import SearchAndDatePicker from "./components/searchAndDatePicker";
-import LocationPage from "./components/pages/LocationPage/LocationPage";
+import LocationPage from "./pages/LocationPage/LocationPage";
+import Header from "./components/header/header";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
     return (
         <div className="container">
-            <h1>hello</h1>
-            <SearchAndDatePicker/>
-            <LocationPage/>
+            <BrowserRouter>
+                <Header/>
+                <Routes>
+                    <Route path={'/'} element={<LocationPage/>}/>
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

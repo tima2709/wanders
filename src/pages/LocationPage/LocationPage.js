@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import style from './locationPage.module.css';
-import img1 from '../../assets/unsplash_BKLHxgbYFDI.png';
-import img2 from '../../assets/unsplash_Bkci_8qcdvQ.png';
-import img3 from '../../assets/unsplash_78A265wPiO4.png';
+import img1 from '../../components/assets/unsplash_BKLHxgbYFDI.png';
+import img2 from '../../components/assets/unsplash_Bkci_8qcdvQ.png';
+import img3 from '../../components/assets/unsplash_78A265wPiO4.png';
 
 const LocationPage = () => {
 
@@ -79,9 +79,28 @@ const LocationPage = () => {
                 </p>
                 <button
                     onClick={() => setShowMore(!showMore)}
+                    className={style.showMore_btn}
                 >
                     {showMore ? "Скрыть" : "Читать далее"}
                 </button>
+            </section>
+            <section className={style.howToGetThere}>
+                <h2>Как добраться</h2>
+                <p>На территории ущелья располагается национальный парк, поэтому вход или въезд на его территорию является платным. </p>
+                <div className={style.road_btn}>
+                    <button>Маршрутка</button>
+                    <button>Велосипед</button>
+                    <button>Машина</button>
+                </div>
+                <div className={style.time_price}>
+                    <p>Время пути: <span>1,5 часа</span></p>
+                    <p>Стоимость: <span>50 сом</span></p>
+                </div>
+                <p>Можно добраться на 265 маршрутке, которая ходит в течении дня с Ошского рынка (нужно уточнять, идет ли она до заповедника или нет).</p>
+            </section>
+            <section>
+                <h1>Туры к ущелью Ала-Арча</h1>
+
             </section>
         </div>
     );
