@@ -1,0 +1,43 @@
+.about_project {
+    border-top: 1px solid rgba(217, 217, 217, 0.40);
+    border-bottom: 1px solid rgba(217, 217, 217, 0.40);
+
+    border-radius: 15px;
+    opacity: 0.8;
+    /*background: rgba(217, 217, 217, 0.40);*/
+    padding: 0 0 30px 0;
+    color: #282828;
+
+    font-family: Averta Demo PE, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+
+.about_project__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about_project__links a {
+    text-decoration: none;
+
+    color: #282828;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: pointer;
+}
+
+.about_project p {
+    color: #6E6E6E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 30px 0 20px 0;
+}
