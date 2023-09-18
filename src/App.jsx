@@ -6,6 +6,7 @@ import {history} from "./lib/history";
 import {isAuth} from "./lib/helper";
 import LocationsPage from "./pages/locationsPage";
 import ToursPage from "./pages/toursPage";
+import AboutProject from "./components/aboutProject";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                         <Route path={'/tours'} element={<ToursPage/>}/>
                         <Route path={'/locations'} element={<LocationsPage/>}/>
                         <Route path={'/login'} element={<LoginPage/>}/>
+                        <Route path={'/about-project'} element={<AboutProject/>}/>
 
                         {/*<Route path={'/register'} element={<RegisterPage/>}/>*/}
                         {/*<Route path={'/'} element={*/}
