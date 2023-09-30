@@ -10,6 +10,7 @@ import InfoIcon from "../icons/infoIcon";
 
 const TourCard = ({tours}) => {
 
+    console.log(tours)
 
     return (
         <div className={style.container}>
@@ -17,7 +18,7 @@ const TourCard = ({tours}) => {
             <div className={style.row}>
 
                 {
-                    tours.map((tour, idx) => {
+                    tours?.map((tour, idx) => {
                         return (
                             <div className={style.col3} key={idx}>
                                 <div className={style.box}>
@@ -42,7 +43,7 @@ const TourCard = ({tours}) => {
                                             <span>
                                                 <StarIcon/>
                                             </span> Новый <span>· Чуйская обл.</span></h3>
-                                        <p>Панорама Ак-Таш</p>
+                                        <p>{tour.title_tour}</p>
                                         <h2>800 с / <span> 1 день</span></h2>
                                        <div className={style.level}> <p>Базовый </p><button>
                                            <InfoIcon/>

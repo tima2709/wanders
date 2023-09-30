@@ -1,7 +1,7 @@
 import {GET_TOURS_LIST} from "../types";
 
 const initialState = {
-    tours: {},
+    tours: [],
 }
 
 const tourReducers = (state = initialState, action) => {
