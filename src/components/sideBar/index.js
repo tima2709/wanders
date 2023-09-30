@@ -9,7 +9,7 @@ const SideBar = ({children}) => {
 
     return (
         <div className="component-sidebar">
-            <div className={'container'}>
+            <div className={''}>
                 <div className={'sidebar'}>
                     <div className="logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">

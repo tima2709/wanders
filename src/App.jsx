@@ -7,10 +7,20 @@ import {isAuth} from "./lib/helper";
 import LocationsPage from "./pages/locationsPage";
 import ToursPage from "./pages/toursPage";
 import AboutProject from "./components/aboutProject";
+import {useEffect} from "react";
+import {getTourList} from "./redux/actions/tourAction";
+import {useDispatch} from "react-redux";
+import LocationPage from "./pages/LocationPage/LocationPage";
 
 
 function App() {
     const isAuthenticated = localStorage.getItem('isAuth')
+
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getTourList())
+    }, [])
+
 
     return (
         <>
@@ -19,6 +29,7 @@ function App() {
                         <Route path={'/'} element={<HomePage/>}/>
                         <Route path={'/tours'} element={<ToursPage/>}/>
                         <Route path={'/locations'} element={<LocationsPage/>}/>
+                        <Route path={'/location'} element={<LocationPage/>}/>
                         <Route path={'/login'} element={<LoginPage/>}/>
                         <Route path={'/about-project'} element={<AboutProject/>}/>
 
