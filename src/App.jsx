@@ -11,6 +11,8 @@ import {useEffect} from "react";
 import {getTourList} from "./redux/actions/tourAction";
 import {useDispatch} from "react-redux";
 import LocationPage from "./pages/LocationPage/LocationPage";
+import PrivateRoute from "./components/privateRoute";
+import ProfilePage from "./pages/profilePage";
 
 
 function App() {
@@ -34,11 +36,11 @@ function App() {
                         <Route path={'/about-project'} element={<AboutProject/>}/>
 
                         {/*<Route path={'/register'} element={<RegisterPage/>}/>*/}
-                        {/*<Route path={'/'} element={*/}
-                        {/*    <PrivateRoute auth={{isAuthenticated: isAuth}}>*/}
-                        {/*        <ProfilePage/>*/}
-                        {/*    </PrivateRoute>*/}
-                        {/*}/>*/}
+                        <Route path={'/profile'} element={
+                            <PrivateRoute auth={{isAuthenticated: isAuth}}>
+                                <ProfilePage/>
+                            </PrivateRoute>
+                        }/>
 
                     </Routes>
               </BrowserRouter>
