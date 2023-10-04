@@ -68,6 +68,9 @@
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
     height: 100vh;
     padding: 0 30px;
+
+    position: sticky;
+    top: 0;
 }
 
 .author_link {

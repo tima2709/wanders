@@ -25,7 +25,7 @@ const TourCard = ({tours}) => {
                                     <div className={style.imgWrap}>
                                             <p className={style.type}>На чиле</p>
                                         <LikeBtn tour={tour}/>
-                                        <img className={style.imgTour} src={imgTour} alt=''/>
+                                        <img className={style.imgTour} src={tour.tour_images[0].image} alt=''/>
                                         <div className={style.userWrap}>
                                             <div className={style.user}><img className={style.userWrapImg} src={imgUser} alt=""/>
                                                 <h2 className={style.h2}>Алия К.</h2></div>

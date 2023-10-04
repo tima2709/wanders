@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getTourList} from "../../redux/actions/tourAction";
 import {tours} from "../../redux/selectors";
 import TourCard from "../../components/TourCard/TourCard";
+import Layout from "../../components/Layout";
 
 const ToursPage = () => {
 
@@ -15,17 +16,13 @@ const ToursPage = () => {
 
 
     return (
-        <div className={'container'}>
-            <div className="page">
-                <SideBar/>
-                <div className="page_main">
-                    <Header/>
-                    { tours_data.length &&
-                        <TourCard tours={tours_data}/>
-                    }
-                </div>
-            </div>
-        </div>
+        <>
+            <Layout>
+                { tours_data.length &&
+                    <TourCard tours={tours_data}/>
+                }
+            </Layout>
+        </>
     );
 };
 

@@ -82,3 +82,11 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.userImgLogo {
+    padding: 10px 20px;
+    background: #988484;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 25px;
+}

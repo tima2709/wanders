@@ -5,10 +5,10 @@ import FavoriteIcon from "../icons/favoriteIcon";
 import MessageIcon from "../icons/messageIcon";
 import headerStyle from "./header.module.css";
 import img from '../assets/unsplash_78A265wPiO4.png'
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {user} from "../../redux/selectors";
 import {isAuth} from "../../lib/helper";
-
+import {userAuthLogOut} from "../../redux/actions/userAction";
 
 
 
@@ -18,6 +18,7 @@ const Header = () => {
     const [dropdownValue, setDropdownValue] = useState([1])
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const handleClickDropdown = () => {
         setDropdownUser(!dropdownUser)
@@ -25,6 +26,9 @@ const Header = () => {
 
     const user_data = useSelector(user)
     // console.log(user_data)
+    const handleLogOut = () => {
+        dispatch(userAuthLogOut())
+    }
 
 
     return (
@@ -42,15 +46,16 @@ const Header = () => {
                 isAuth() ?
                     <div className={headerStyle.dropdown}>
                         <div onClick={handleClickDropdown} className={headerStyle.dropdown_btn}>
-                            <img className={headerStyle.userImg} src={img} alt=""/>
-                            <span>{user_data.username}</span>
+                            {/*<img className={headerStyle.userImg} src={img} alt=""/>*/}
+                            <span className={headerStyle.userImgLogo}>{localStorage.getItem("username")[0].toUpperCase()}</span>
+                            <span>{localStorage.getItem("username")}</span>
                         </div>
                         <div className={`${headerStyle.dropdown_items} ${dropdownUser ? headerStyle.isVisible : headerStyle.isHidden}`}>
                             <div className={headerStyle.dropdown_item}>
-                                <Link to={'/setting'}><span>Настройки профиля</span></Link>
+                                <Link to={'/profile'}><span>Настройки профиля</span></Link>
                             </div>
-                            <div className={headerStyle.dropdown_item}>
-                                <Link to={'/logout'}><span>Выход</span></Link>
+                            <div onClick={() => handleLogOut()} className={headerStyle.dropdown_item}>
+                                <span >Выход</span>
                             </div>
                         </div>
                     </div>

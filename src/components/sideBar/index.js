@@ -9,7 +9,6 @@ const SideBar = ({children}) => {
 
     return (
         <div className="component-sidebar">
-            <div className={''}>
                 <div className={'sidebar'}>
                     <div className="logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
@@ -33,7 +32,6 @@ const SideBar = ({children}) => {
                 <main>{children}</main>
                 <AboutProject/>
                 <Link className={'author_link'} to={'/'}>Авторам путешествий</Link>
-            </div>
         </div>
 
     );
