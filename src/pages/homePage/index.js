@@ -22,13 +22,14 @@ const HomePage = () => {
 
     return (
         <div className={styles.page}>
-            <SideBar/>
+            <div className={styles.sideBar}><SideBar/></div>
             <div className={styles.page_main}>
                 <Header/>
                 <div>
                     <section className={styles.helloSection}>
                         <div className={styles.aboutWanders}>
                             <div className={styles.helloWanders}>
+
                                 <h1>Привет</h1>
                                 <h1>Это Wanders</h1>
                                 <div className={styles.peaceIcon}><img src={peace} alt=""/></div>
@@ -107,7 +108,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className={styles.homePageBtn}><Link to={'/tours'}>Смотреть еще</Link></button>
+                        <Link to={'/tours'}  className={styles.homePageBtn}><button>Смотреть еще</button></Link>
                     </section>
                     <section className={styles.ourTourCollection}>
                         <h1>Узнай больше о локации</h1>
@@ -145,7 +146,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className={styles.homePageBtn}><Link to={'/locations'}>Смотреть еще</Link></button>
+                        <Link to={'/locations'}  className={styles.homePageBtn}><button>Смотреть еще</button></Link>
                     </section>
                     <section className={styles.ourTourCollection}>
                         <h1>Часто задаваемые вопросы</h1>

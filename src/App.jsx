@@ -7,6 +7,9 @@ import {isAuth} from "./lib/helper";
 import LocationsPage from "./pages/locationsPage";
 import ToursPage from "./pages/toursPage";
 import AboutProject from "./components/aboutProject";
+import CreateTourDays from "./components/createTourDays/createTourDays";
+import Accommodation from "./pages/accommodationPage/accommodation";
+import CreateTourPage from "./pages/createTourPage/createTourPage";
 
 
 function App() {
@@ -16,7 +19,7 @@ function App() {
         <>
               <BrowserRouter history={history}>
                     <Routes>
-                        <Route path={'/'} element={<HomePage/>}/>
+                        <Route path={'/'} element={<CreateTourPage/>}/>
                         <Route path={'/tours'} element={<ToursPage/>}/>
                         <Route path={'/locations'} element={<LocationsPage/>}/>
                         <Route path={'/login'} element={<LoginPage/>}/>

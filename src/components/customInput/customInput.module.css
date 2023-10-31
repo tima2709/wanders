@@ -1,0 +1,61 @@
+.input_contain{
+    position: relative;
+    margin: 15px 0;
+    /*min-width: 310px;*/
+}
+.addInput{
+    width: 100%;
+    padding: 13px 17px;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    color: #000000;
+}
+.addInput:focus{
+    outline: none;
+    border-color: #0FA958;
+}
+.addInput:focus + .placeholder_text .text, :not(.addInput[value=""]) + .placeholder_text .text{
+    background-color: white;
+    font-size: 16px;
+    color: #000000;
+    transform: translate(0, -140%);
+}
+.addInput:focus + .placeholder_text .text{
+    border-color: #0FA958;
+    color: #0FA958;
+}
+.placeholder_text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid transparent;
+    background-color: transparent;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+.text{
+    padding: 0 0.5rem;
+    background-color: transparent;
+    transform: translate(0);
+    color: #000;
+    font-family: Averta Demo PE;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: transform 0.15s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
+}
+.addInput, .placeholder_text{
+    color: #000000;
+    font-size: 14px;
+    padding: 13px 17px;
+}
+
+/*@media (max-width: 40rem) {*/
+/*    .addInput{*/
+/*        width: 70vw;*/
+/*    }*/
+/*}*/

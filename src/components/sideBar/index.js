@@ -3,8 +3,9 @@ import HomeIcon from "../icons/HomeIcon";
 import {Link, NavLink} from "react-router-dom";
 import './sideBarStyles.css'
 import ToursIcon from "../icons/ToursIcon";
-import LocationsIcon from "../icons/LocationsIcon";
 import AboutProject from "../aboutProject";
+import LocationPage from "../../pages/LocationPage/LocationPage";
+import LocationsIcon from "../icons/LocationsIcon";
 const SideBar = ({children}) => {
 
     return (
