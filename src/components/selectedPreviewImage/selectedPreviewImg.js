@@ -20,6 +20,7 @@ const SelectedPreviewImg = ({selectedImg, setSelectedImg, tourDays}) => {
                         <button
                             className={style.deleteIcon}
                             onClick={() => handleDelete(el, idx)}
+                            type={'button'}
                         >
                             &times;
                         </button>
