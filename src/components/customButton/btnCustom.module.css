@@ -1,0 +1,16 @@
+.custom_btn {
+    padding: 13px 17px;
+    border-radius: 10px;
+    border: 1px solid #0FA958;
+    color: #0FA958;
+    font-family: Averta Demo PE;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

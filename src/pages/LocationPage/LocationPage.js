@@ -9,11 +9,6 @@ const LocationPage = () => {
     const [descTour] = useState(desc)
     const [showMore, setShowMore] = useState(false)
 
-    //474
-
-
-    // console.log(descTour[0].description.length)
-
     return (
         <div className={style.container}>
             <div className={style.titleLocation}>
