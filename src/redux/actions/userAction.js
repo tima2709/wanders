@@ -48,7 +48,7 @@ const userAuthLogin = (data) => {
 const userAuthLogOut = () => {
     return (dispatch) => {
         localStorage.removeItem('token')
-        localStorage.removeItem('user')
+        localStorage.removeItem('username')
         localStorage.removeItem('isAuth')
         Cookies.remove('token')
         dispatch({type: USER_AUTH_LOG_OUT})

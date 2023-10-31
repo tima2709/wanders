@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import styles from './style.module.css'
 import SideBar from "../../components/sideBar";
@@ -16,16 +16,25 @@ import peace from '../../components/assets/image 566.png'
 import ArrowIcon from "../../components/icons/arrowIcon";
 import DropdownQ from "../../components/dropdownQuestions/dropdownQuestions";
 import ArrowKyishakIcon from "../../components/icons/arrowKyishakIcon";
+import Layout from "../../components/Layout";
+
 
 const HomePage = () => {
 
 
     return (
+
         <div className={styles.page}>
             <div className={styles.sideBar}><SideBar/></div>
             <div className={styles.page_main}>
                 <Header/>
-                <div>
+
+        // <div className="container">
+        //     <div className='page'>
+        <Layout>
+            <div className="">
+                {/*<div>*/}
+
                     <section className={styles.helloSection}>
                         <div className={styles.aboutWanders}>
                             <div className={styles.helloWanders}>
@@ -55,7 +64,8 @@ const HomePage = () => {
                             <div className={styles.col_4}>
                                 <div className={`${styles.box1} ${styles.booking}`}>
                                     <h3>Выбери тур</h3>
-                                    <p>Переходи в раздел туры. Выбери понравившийся тур. Ознакомься с программой и датой тура</p>
+                                    <p>Переходи в раздел туры. Выбери понравившийся тур. Ознакомься с программой и датой
+                                        тура</p>
                                 </div>
                             </div>
                             <div className={styles.col_4}>
@@ -67,7 +77,8 @@ const HomePage = () => {
                             <div className={styles.col_4}>
                                 <div className={`${styles.box3} ${styles.booking}`}>
                                     <h3>Наслаждайся поездкой</h3>
-                                    <p>А вот и настал день тура. Отбрось все проблемы позади и насладись путешествием!</p>
+                                    <p>А вот и настал день тура. Отбрось все проблемы позади и насладись
+                                        путешествием!</p>
                                 </div>
                             </div>
                         </div>
@@ -216,11 +227,12 @@ const HomePage = () => {
                             </div>
                         </div>
                     </section>
-                </div>
+                {/*</div>*/}
+                {/*    </div>*/}
+
+                {/*</div>*/}
             </div>
-
-        </div>
-
+        </Layout>
 
     );
 };

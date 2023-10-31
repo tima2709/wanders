@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 40px;
 }
 .userImg {
     width: 45px;
@@ -69,4 +70,23 @@
 .isHidden {
     visibility: hidden;
     display: none;
+}
+
+.signInBtn {
+    margin-left: 30px;
+    padding: 10px 30px;
+    background: #0FA958;
+    color: #fff;
+    text-transform: uppercase;
+    border: unset;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.userImgLogo {
+    padding: 10px 20px;
+    background: #988484;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 25px;
 }
