@@ -7,6 +7,9 @@ import {isAuth} from "./lib/helper";
 import LocationsPage from "./pages/locationsPage";
 import ToursPage from "./pages/toursPage";
 import AboutProject from "./components/aboutProject";
+import CreateTourDays from "./components/createTourDays/createTourDays";
+import Accommodation from "./pages/accommodationPage/accommodation";
+import CreateTourPage from "./pages/createTourPage/createTourPage";
 import {useEffect} from "react";
 import {getTourList} from "./redux/actions/tourAction";
 import {useDispatch} from "react-redux";
@@ -14,6 +17,7 @@ import LocationPage from "./pages/LocationPage/LocationPage";
 import PrivateRoute from "./components/privateRoute";
 import ProfilePage from "./pages/profilePage";
 import PriceAndDatesPage from "./pages/priceAndDatesPage";
+
 
 
 function App() {
@@ -29,7 +33,7 @@ function App() {
         <>
               <BrowserRouter history={history}>
                     <Routes>
-                        <Route path={'/'} element={<HomePage/>}/>
+                        <Route path={'/'} element={<CreateTourPage/>}/>
                         <Route path={'/tours'} element={<ToursPage/>}/>
                         <Route path={'/locations'} element={<LocationsPage/>}/>
                         <Route path={'/location'} element={<LocationPage/>}/>

@@ -161,16 +161,19 @@
     width: 100%;
     padding: 28px 0;
     color: #fff;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.homePageBtn button {
+    border: none;
+    background: transparent;
+    color: #fff;
     font-family: Gilroy, sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 25px;
-}
-
-.homePageBtn a {
-    color: #ffffff;
 }
 
 

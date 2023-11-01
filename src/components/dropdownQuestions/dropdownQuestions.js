@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import dropdownStyle from './dropdownQ.module.css'
 import PlusIcon from "../../components/icons/plusIcon";
-import MinusIcon from "../../components/icons/minuseIcon";
+import MinusIcon from "../icons/minusIcon";
 
 const DropdownQ = ({question}) => {
 
