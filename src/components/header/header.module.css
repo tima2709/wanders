@@ -5,6 +5,8 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 40px;
+    background: #fff;
+    padding-left: 26px;
 }
 .userImg {
     width: 45px;
