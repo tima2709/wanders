@@ -56,6 +56,22 @@ a {
     padding: 0 0 0 20px;
 }
 
-.layout {
-    padding: 0 0 0 26px;
+.layout-children {
+    padding: 20px 0 0 26px;
+    /*background: #F5F5F5;*/
+    height: 100vh;
+}
+
+
+
+.chip {
+    background: #0FA958 !important;
+}
+
+.highlightOption {
+    background: #0FA958 !important;
+}
+
+.option:hover {
+    background: #219658 !important;
 }
