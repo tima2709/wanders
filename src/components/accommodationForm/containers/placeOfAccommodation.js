@@ -46,7 +46,6 @@ const PlaceOfAccommodation = ({tourHotels, setTourHotels}) => {
     }
 
     function handleChangeHotelType(event, index) {
-        console.log(event, 'e')
         const newHotelValue = [...tourHotels]
         newHotelValue[index].type = event
         setTourHotels(newHotelValue)

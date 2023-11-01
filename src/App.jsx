@@ -32,7 +32,7 @@ function App() {
         <>
               <BrowserRouter history={history}>
                     <Routes>
-                        <Route path={'/'} element={<CreateTourPage/>}/>
+                        <Route path={'/'} element={<Accommodation/>}/>
                         <Route path={'/tours'} element={<ToursPage/>}/>
                         <Route path={'/locations'} element={<LocationsPage/>}/>
                         <Route path={'/location'} element={<LocationPage/>}/>
