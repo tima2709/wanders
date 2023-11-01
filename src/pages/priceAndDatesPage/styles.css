@@ -1,0 +1,34 @@
+.title-price {
+    color: #000;
+
+    font-family: Gilroy, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.search-wrapper {
+    border-radius: 10px;
+    border: 1px solid #282828;
+    opacity: 0.6;
+    padding: 13px 17px;
+
+    color: #282828;
+    font-family: Averta Demo PE, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /*width: 80%;*/
+}
+
+.multiSelectContainer {
+    width: 80%;
+}
+
+.chip {
+    margin-bottom: unset;
+}

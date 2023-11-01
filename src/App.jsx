@@ -16,6 +16,7 @@ import {useDispatch} from "react-redux";
 import LocationPage from "./pages/LocationPage/LocationPage";
 import PrivateRoute from "./components/privateRoute";
 import ProfilePage from "./pages/profilePage";
+import PriceAndDatesPage from "./pages/priceAndDatesPage";
 
 
 
@@ -23,9 +24,9 @@ function App() {
     const isAuthenticated = localStorage.getItem('isAuth')
 
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getTourList())
-    }, [])
+    // useEffect(() => {
+    //     dispatch(getTourList())
+    // }, [])
 
 
     return (
@@ -38,6 +39,7 @@ function App() {
                         <Route path={'/location'} element={<LocationPage/>}/>
                         <Route path={'/login'} element={<LoginPage/>}/>
                         <Route path={'/about-project'} element={<AboutProject/>}/>
+                        <Route path={'/price-dates'} element={<PriceAndDatesPage/>}/>
 
                         {/*<Route path={'/register'} element={<RegisterPage/>}/>*/}
                         <Route path={'/profile'} element={
